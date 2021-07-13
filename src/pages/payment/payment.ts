@@ -11,7 +11,7 @@ import { PedidoDTO } from '../../models/pedito.dto';
 })
 export class PaymentPage {
 
-  pedito: PedidoDTO;
+  pedido: PedidoDTO;
 
   parcelas: number[] = [1, 2 ,3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
@@ -22,7 +22,7 @@ export class PaymentPage {
     public navParams: NavParams,
     public formBuilder: FormBuilder) {
 
-    this.pedito = this.navParams.get('pedido');
+    this.pedido = this.navParams.get('pedido');
 
     this.formGroup = this.formBuilder.group({
       numeroDeParcelas: [1, Validators.required],
@@ -31,7 +31,8 @@ export class PaymentPage {
   }
 
   nextPage() {
-    this.pedito.pagamento = this.formGroup.value;
-    console.log(this.pedito);
+    this.pedido.pagamento = this.formGroup.value;
+    console.log(this.pedido);
+    this.navCtrl.setRoot('OrderConfirmationPage', {pedido: this.pedido});
   }
 }
