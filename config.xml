@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>cursomcionic</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="com.lwinfo.cursomcionic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Sistema de Pedidos-LwInfo</name>
+    <description>Estudo de caso-Spring Boot e Ionic/Cordova</description>
+    <author email="leandrowakim@yahoo.com.br" href="linkedin.com/in/leandro-wakim-52586a112">Leandro Wakim</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -100,4 +100,5 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <engine name="browser" spec="~5.0.4" />
     <plugin name="cordova-plugin-camera" spec="^4.1.0" />
+    <engine name="android" spec="~6.3.0" />
 </widget>
